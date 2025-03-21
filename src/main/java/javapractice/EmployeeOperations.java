@@ -70,7 +70,7 @@ public class EmployeeOperations {
 		Predicate<Employee> comPredicate = graterThan70KPredicate.and(lessThan80KPredicate);
 		
 		
-		List<Employee> empGraerThan70k = employees.stream().filter(comPredicate).collect(Collectors.toList());
-		System.out.println(empGraerThan70k);
+		List<Employee> empGraerThan70kto80K = employees.stream().filter(comPredicate).collect(Collectors.toList());
+		System.out.println(empGraerThan70kto80K);
 	}
 }
